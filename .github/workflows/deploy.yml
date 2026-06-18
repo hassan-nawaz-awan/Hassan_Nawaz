@@ -24,18 +24,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
-          cache-dependency-path: "hassan_personal/package-lock.json"
       - name: Install dependencies
-        run: npm ci
-        working-directory: hassan_personal
+        run: npm install
       - name: Build
         run: npm run build
-        working-directory: hassan_personal
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./hassan_personal/out
+          path: ./out
 
   deploy:
     environment:
