@@ -1,12 +1,12 @@
-&apos;use client&apos;;
+'use client';
 
-import { motion } from &apos;framer-motion&apos;;
-import { MapPin, Mail } from &apos;lucide-react&apos;;
-import { siteConfig, socialLinks } from &apos;@/data&apos;;
-import { Section } from &apos;@/components/section&apos;;
-import { SectionHeading } from &apos;@/components/section-heading&apos;;
-import { ContactForm } from &apos;@/components/ui/contact-form&apos;;
-import { Icon } from &apos;@/components/icon&apos;;
+import { motion } from 'framer-motion';
+import { MapPin, Mail } from 'lucide-react';
+import { siteConfig, socialLinks } from '@/data';
+import { Section } from '@/components/section';
+import { SectionHeading } from '@/components/section-heading';
+import { ContactForm } from '@/components/ui/contact-form';
+import { Icon } from '@/components/icon';
 
 export function Contact() {
   return (
@@ -26,10 +26,10 @@ export function Contact() {
         >
           <div>
             <h3 className="text-2xl font-display font-bold text-navy-900 dark:text-white mb-4">
-              Let&apos;s Connect
+              Let's Connect
             </h3>
             <p className="text-navy-600 dark:text-navy-300 leading-relaxed">
-              I&apos;m always open to discussing research collaborations, PhD opportunities,
+              I'm always open to discussing research collaborations, PhD opportunities,
               and the future of AI in scientific discovery.
             </p>
           </div>

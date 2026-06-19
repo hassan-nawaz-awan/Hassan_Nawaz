@@ -1,15 +1,15 @@
-&apos;use client&apos;;
+'use client';
 
-import { useState } from &apos;react&apos;;
-import { motion } from &apos;framer-motion&apos;;
-import { Send, User, Mail, MessageSquare } from &apos;lucide-react&apos;;
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Send, User, Mail, MessageSquare } from 'lucide-react';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: &apos;&apos;,
-    email: &apos;&apos;,
-    subject: &apos;&apos;,
-    message: &apos;&apos;,
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -23,7 +23,7 @@ export function ContactForm() {
 
     setIsSubmitting(false);
     setIsSubmitted(true);
-    setFormData({ name: &apos;&apos;, email: &apos;&apos;, subject: &apos;&apos;, message: &apos;&apos; });
+    setFormData({ name: '', email: '', subject: '', message: '' });
 
     setTimeout(() => setIsSubmitted(false), 5000);
   };
@@ -124,7 +124,7 @@ export function ContactForm() {
         className="inline-flex items-center justify-center gap-2 w-full md:w-auto px-8 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 text-white hover:from-cyan-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
       >
         {isSubmitting ? (
-          &apos;Sending...&apos;
+          'Sending...'
         ) : (
           <>
             Send Message
@@ -139,7 +139,7 @@ export function ContactForm() {
           animate={{ opacity: 1, y: 0 }}
           className="text-sm font-medium text-green-600 dark:text-green-400"
         >
-          Thank you for your message! I&apos;ll get back to you soon.
+          Thank you for your message! I'll get back to you soon.
         </motion.p>
       )}
     </motion.form>
